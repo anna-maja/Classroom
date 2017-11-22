@@ -3,14 +3,14 @@ package otherclasses;
 
 import java.util.ArrayList;
 
-public class Classroom {
+public class Classroom021 {
 	
 	private String classroomName = "";
 	private String classroomTerm = "";
-	private ArrayList<Student> students = new ArrayList<Student>();
+	private ArrayList<Student021> students = new ArrayList<Student021>();
 	
 		
-	public Classroom(String classroomName, String classroomTerm, ArrayList<Student> students){
+	public Classroom021(String classroomName, String classroomTerm, ArrayList<Student021> students){
 		this.classroomName = classroomName;
 		this.classroomTerm = classroomTerm;
 		this.students = students;		
@@ -33,22 +33,22 @@ public class Classroom {
 		this.classroomTerm = classroomTerm;
 	}
 	
-	public ArrayList<Student> getStudents() {
+	public ArrayList<Student021> getStudents() {
 		return students;
 	}
 
 
-	public void setStudents(ArrayList<Student> students) {
+	public void setStudents(ArrayList<Student021> students) {
 		this.students = students;
 	}
 
-	public void addANewStudent(Student student){
+	public void addANewStudent(Student021 student){
 		this.students.add(student);
 	}
 	
 
 	public void removeAStudent(String name){
-		Student student = null;
+		Student021 student = null;
 		boolean studentExists = false;
 		for(int i= 0 ; i < this.students.size() ; i++){
 			student = this.students.get(i);
@@ -69,7 +69,7 @@ public class Classroom {
 	public void printFullRelatory(){
 		System.out.println("Classroom name: "+this.classroomName);
 		System.out.println("Classroom term: "+this.classroomTerm+"\n");
-		for (Student student : this.students){
+		for (Student021 student : this.students){
 			System.out.println(student.toString());
 		}
 	}

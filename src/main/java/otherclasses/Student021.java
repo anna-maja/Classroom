@@ -3,7 +3,7 @@ package otherclasses;
 
 import java.text.DecimalFormat;
 
-public class Student extends Person {
+public class Student021 extends Person021 {
 	//Attributes
 	private double firstGrade = 0.0;
 	private double secondGrade= 0.0;
@@ -12,13 +12,13 @@ public class Student extends Person {
 	
 
 	//Constructors
-	public Student(String firstName, String lastName, int age, char gender) {
+	public Student021(String firstName, String lastName, int age, char gender) {
 		super(firstName, lastName,age, gender);
 		
 
 	}		
 
-	public Student( String firstName, String lastName, int age, char gender, double firstGrade, double secondGrade,
+	public Student021( String firstName, String lastName, int age, char gender, double firstGrade, double secondGrade,
 			double thirdGrade) {
 		super(firstName, lastName, age, gender);
 		this.firstGrade = firstGrade;

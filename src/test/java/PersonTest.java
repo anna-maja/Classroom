@@ -2,13 +2,13 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-import otherclasses.Person;
+import otherclasses.Person021;
 
 public class PersonTest {
 
 	@Test
 	public void test() {
-		Person p = new Person("Rafael", "Silva", 30,'M');
+		Person021 p = new Person021("Rafael", "Silva", 30,'M');
 		assertEquals(p.getFirstName().equals("Rafael"),true);
 	}
 
