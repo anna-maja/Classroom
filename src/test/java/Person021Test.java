@@ -5,7 +5,7 @@ import org.junit.Test;
 import otherclasses.Person021;
 import otherclasses.Student021;
 
-public class PersonTest {
+public class Person021Test {
 
 	@Test
 	public void test() {
@@ -22,6 +22,7 @@ public class PersonTest {
 		sBas1.setLastName("Adamsson");
 		sBas1.setAge(18);
 		sBas1.setGender('m');
+		
 		assertEquals(sBas1.getFirstName().equals("Adam Bas"), true);
 		assertEquals(sBas1.getLastName().equals("Adamsson"), true);
 		assertEquals(sBas1.getAge(), 18);
