@@ -16,17 +16,17 @@ public class Person021Test {
 	@Test
 	public void testGetSetPerson021() {
 		
-		Student021 sBas1 = new Student021("Adam Bas", "Adamsson", 18, 'm');
+		Person021 pBas1 = new Person021("Adam", "Adamsdotter", 15, 'o');
 
-		sBas1.setFirstName("Adam Bas");
-		sBas1.setLastName("Adamsson");
-		sBas1.setAge(18);
-		sBas1.setGender('m');
+		pBas1.setFirstName("Adam Bas");
+		pBas1.setLastName("Adamsson");
+		pBas1.setAge(18);
+		pBas1.setGender('m');
 		
-		assertEquals(sBas1.getFirstName().equals("Adam Bas"), true);
-		assertEquals(sBas1.getLastName().equals("Adamsson"), true);
-		assertEquals(sBas1.getAge(), 18);
-		assertEquals(sBas1.getGender(), 'm');
+		assertEquals(pBas1.getFirstName().equals("Adam Bas"), true);
+		assertEquals(pBas1.getLastName().equals("Adamsson"), true);
+		assertEquals(pBas1.getAge(), 18);
+		assertEquals(pBas1.getGender(), 'm');
 	}
 
 
