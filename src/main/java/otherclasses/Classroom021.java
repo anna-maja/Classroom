@@ -70,7 +70,8 @@ public class Classroom021 {
 		System.out.println("Classroom name: "+this.classroomName);
 		System.out.println("Classroom term: "+this.classroomTerm+"\n");
 		for (Student021 student : this.students){
-			System.out.println(student.toString());
+			String fullRelatory = "The students for this term are:\n" + student.toString();
+			System.out.println(fullRelatory);
 		}
 	}
 	
