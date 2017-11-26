@@ -62,7 +62,7 @@ public class Student021Test {
 		assertEquals(se1.getThirdGrade(), 7.7, 0);
 
 	}
-
+	
 	@Test
 	public void testSetAndGetAverage() {
 
@@ -121,7 +121,8 @@ public class Student021Test {
 	}
 
 	@Test
-	public void testToStringStudent021() {
+	public void testToStringStudent021() { 
+		
 
 		se1.setFirstGrade(5.0);
 		se1.setSecondGrade(5.0);

@@ -15,7 +15,7 @@ public class Classroom021 {
 		this.classroomTerm = classroomTerm;
 		this.students = students;		
 	}	
-	
+
 	
 	public String getClassroomName() {
 		return classroomName;
@@ -48,9 +48,12 @@ public class Classroom021 {
 	
 
 	public void removeAStudent(String name){
+		
 		Student021 student = null;
 		boolean studentExists = false;
+		
 		for(int i= 0 ; i < this.students.size() ; i++){
+		
 			student = this.students.get(i);
 			if (student.getFirstName().contains(name)){
 				studentExists = true;
