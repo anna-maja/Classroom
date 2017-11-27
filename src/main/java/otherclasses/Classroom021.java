@@ -69,7 +69,7 @@ public class Classroom021 {
 		
 		
 	}
-	
+
 	public void printFullRelatory(){
 		System.out.println("Classroom name: "+this.classroomName);
 		System.out.println("Classroom term: "+this.classroomTerm+"\n");
@@ -79,5 +79,5 @@ public class Classroom021 {
 		}
 	}
 	
-	
+ 
 }
