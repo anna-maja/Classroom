@@ -59,6 +59,7 @@ public class Classroom021 {
 				studentExists = true;
 				this.students.remove(i);
 				System.out.println("Student "+name+" successfully removed!");
+				
 			}	
 		}
 		

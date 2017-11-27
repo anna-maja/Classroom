@@ -73,63 +73,38 @@ public class Classroom021Test {
 
 		LOG.info("Student/s in array:  --- " + cr1.getStudents());
 	}
-	
-	
+
 	/**
-	 * I denna metod vill jag befolka min array med två kända studenter.
-	 * Jag vill därefter kontrollera funktionen "om ett visst namn finns, skall inget göras" 
+	 * I denna metod vill jag befolka min array med två kända studenter. Jag vill
+	 * därefter kontrollera funktionen "om ett visst namn finns, skall inget göras"
 	 * resp "om ett visst namn inte finns, skall den printen displayas".
 	 */
 	@Test
 	public void testRemoveStudent2() {
-	
+
 		Student021 seA = new Student021("Kalle", "Karlsson", 40, 'm', 3, 3, 3);
 		Student021 seB = new Student021("Beda", "Berntsson", 10, 'f', 7, 7, 7);
-		//private ArrayList<Student021> students = new ArrayList<Student021>();
-		
+		// private ArrayList<Student021> students = new ArrayList<Student021>();
+
 		Classroom021 cr3 = new Classroom021("1", "vt20", students);
-		LOG.info("Testing the method removeStudent in Classroom021 with the student " + seA.getFirstName() + " and " + seB.getFirstName());
+		LOG.info("Testing the method removeStudent in Classroom021 with the student " + seA.getFirstName() + " and "
+				+ seB.getFirstName());
 
 		cr3.addANewStudent(seA);
 		cr3.addANewStudent(seB);
-		int expectedStudentsSize = 2; 
+		int expectedStudentsSize = 2;
 		assertEquals((students.size() == expectedStudentsSize), true);
 
-		LOG.info("Variabeln expectedStudentsSize är satt till 2: " +  expectedStudentsSize);
-		LOG.info("students.size är efter tillägg  " + students.size() + " . Det ska vara samma som expectedStudentsSize = 2.\n");
-		
+		LOG.info("Variabeln expectedStudentsSize är satt till 2: " + expectedStudentsSize);
+		LOG.info("students.size är efter tillägg  " + students.size()
+				+ " . Det ska vara samma som expectedStudentsSize = 2.\n");
+
 		cr3.removeAStudent("Beda");
 		assertEquals(cr3.getStudents().contains("Beda"), false);
 		LOG.info("Nu ska bara Kalle finnas kvar. " + cr3.getStudents());
-		
-		
-		
-		
-	
-		/*
-		LOG.info("I will now remove student at index 0, should be Kalle.");
-		students.remove(0);
-		LOG.info("students.size är efter borttag " + students.size() + " = " + (expectedStudentsSize-1));
-		
-	
-		String expectedMessage = "The student does not exist!";
-		*/
 
-		
-		/*
-		 * @Rule
-    public final SystemOutRule systemOutRule = new SystemOutRule().enableLog();
-
-    @Test
-    public void overrideProperty() {
-        System.out.print("hello world");
-        assertEquals("hello world", systemOutRule.getLog());
-    }
-		 */
-		
-		LOG.info("\nOnly student left should be Beda: " + cr3.getStudents());
 	}
-	
+
 	@Test
 
 	public void testPrintFullRelatory() {
@@ -149,9 +124,9 @@ public class Classroom021Test {
 		LOG.info("Group of students should contain all info about Bo Ext && Clara Ext in 123abc and ht15.");
 
 		String expected = "The students for this term are";
-		
+
 		assertEquals(cr1.toString().contains(("Bo Ext")), true);
 		assertEquals(cr1.toString().contains((expected)), true);
-	LOG.info("information about the students: " + cr1.toString());
+		LOG.info("information about the students: " + cr1.toString());
 	}
 }
