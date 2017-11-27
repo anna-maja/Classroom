@@ -98,11 +98,34 @@ public class Classroom021Test {
 		LOG.info("Variabeln expectedStudentsSize är satt till 2: " +  expectedStudentsSize);
 		LOG.info("students.size är efter tillägg  " + students.size() + " . Det ska vara samma som expectedStudentsSize = 2.\n");
 		
+		cr3.removeAStudent("Beda");
+		assertEquals(cr3.getStudents().contains("Beda"), false);
+		LOG.info("Nu ska bara Kalle finnas kvar. " + cr3.getStudents());
+		
+		
+		
+		
+	
+		/*
 		LOG.info("I will now remove student at index 0, should be Kalle.");
 		students.remove(0);
 		LOG.info("students.size är efter borttag " + students.size() + " = " + (expectedStudentsSize-1));
 		
-		assertEquals(cr3.getStudents().contains("Kalle"), false);
+	
+		String expectedMessage = "The student does not exist!";
+		*/
+
+		
+		/*
+		 * @Rule
+    public final SystemOutRule systemOutRule = new SystemOutRule().enableLog();
+
+    @Test
+    public void overrideProperty() {
+        System.out.print("hello world");
+        assertEquals("hello world", systemOutRule.getLog());
+    }
+		 */
 		
 		LOG.info("\nOnly student left should be Beda: " + cr3.getStudents());
 	}
@@ -128,6 +151,7 @@ public class Classroom021Test {
 		String expected = "The students for this term are";
 		
 		assertEquals(cr1.toString().contains(("Bo Ext")), true);
+		assertEquals(cr1.toString().contains((expected)), true);
 	LOG.info("information about the students: " + cr1.toString());
 	}
 }
